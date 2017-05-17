@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+Hello, <span id="lottery"></span>
+<input type="button" onclick="test1()" value="test1"/>
+<script>
+    function test1() {
+        var lottery = document.getElementById("lottery");
+        lottery.innerHTML = parseInt(Math.random()*49+1);
+    }
+</script>
+</body>
+</html>
